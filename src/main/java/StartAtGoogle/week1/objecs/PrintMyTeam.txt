@@ -1,0 +1,13 @@
+My team name is:Barcelona
+[Position: Middlefiled, Name:DONNAROUMA, Jersey: 0, Grade:84]
+[Position: Middlefiled, Name:LIOR, Jersey: 17, Grade:84]
+[Position: Middlefiled, Name:DANILO, Jersey: 9, Grade:84]
+[Position: Middlefiled, Name:RUUD, Jersey: 4, Grade:84]
+[Position: GK, Name:ANA, Jersey: 7, Grade:62]
+[Position: Attack, Name:Dvir, Jersey: 5, Grade:82]
+[Position: Attack, Name:Dvir, Jersey: 8, Grade:35]
+[Position: Attack, Name:Dvir, Jersey: 1, Grade:92]
+[Position: Defense, Name:DANILO, Jersey: 2, Grade:47]
+[Position: Defense, Name:HOZEZ, Jersey: 10, Grade:47]
+[Position: Defense, Name:RUUD, Jersey: 16, Grade:47]
+[Position: Defense, Name:PUYOL, Jersey: 19, Grade:47]
