@@ -4,10 +4,12 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class main {
-
     public static void main(String[] args) throws Exception {
         LocalDate date = LocalDate.from(LocalDateTime.now());
-        JobPosition jp = new JobPosition.Builder(date,"Harry Potter", true).Description("very good").build();
+        JobPosition jp = new JobPosition.Builder(date,"Harry Potter", true).build();
         System.out.println(jp.toString());
+        JobPosition jp2 = new JobPosition.Builder(date,"Harry Potter", true).Description("very good").build();
+        System.out.println(jp2.toString());
+
     }
 }
