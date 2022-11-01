@@ -1,7 +1,9 @@
-package StartAtGoogle.week3.DesignPatterns;
+package StartAtGoogle.week3.DesignPatterns.Behavioral;
 
-import StartAtGoogle.week3.DesignPatterns.Group;
-import StartAtGoogle.week3.DesignPatterns.Visitor;
+import StartAtGoogle.week3.DesignPatterns.Behavioral.Asset;
+import StartAtGoogle.week3.DesignPatterns.Behavioral.Group;
+import StartAtGoogle.week3.DesignPatterns.Behavioral.User;
+import StartAtGoogle.week3.DesignPatterns.Behavioral.Visitor;
 
 import java.io.IOException;
 

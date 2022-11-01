@@ -1,4 +1,4 @@
-package StartAtGoogle.week3.DesignPatterns;
+package StartAtGoogle.week3.DesignPatterns.Behavioral;
 
 
 import com.google.gson.Gson;
@@ -123,42 +123,26 @@ class User implements Appliance{
     }
 }
 
-class Visitor implements toJson{
+class Visitor implements toJson {
     @Override
     public void visit(Group group) throws IOException {
         Gson gson = new Gson();
-        try (FileWriter fw = new FileWriter("src/main/java/StartAtGoogle/week3/DesignPatterns/writeToJson/" + group.toString())) {
-            String userJson = gson.toJson(group);
-            fw.write(userJson);
-        } catch (IOException e) {
-            throw new IOException("cant write to new file to update");
-        }
-        System.out.printf("exportJson the group %s\n", group);
+        String groupJson = gson.toJson(group);
+        System.out.printf("exportJson the group %s\n", groupJson);
     }
 
     @Override
     public void visit(Asset asset) throws IOException {
         Gson gson = new Gson();
-        try (FileWriter fw = new FileWriter("src/main/java/StartAtGoogle/week3/DesignPatterns/writeToJson/" + asset.toString())) {
-            String userJson = gson.toJson(asset);
-            fw.write(userJson);
-        } catch (IOException e) {
-            throw new IOException("cant write to new file to update");
-        }
-        System.out.printf("exportJson the asset %s\n", asset);
+        String assetJson = gson.toJson(asset);
+        System.out.printf("exportJson the asset %s\n", assetJson);
     }
 
     @Override
     public void visit(User user) throws IOException {
         Gson gson = new Gson();
-        try (FileWriter fw = new FileWriter("src/main/java/StartAtGoogle/week3/DesignPatterns/writeToJson/" + user.toString())) {
-            String userJson = gson.toJson(user);
-            fw.write(userJson);
-        } catch (IOException e) {
-            throw new IOException("cant write to new file to update");
-        }
-        System.out.printf("exportJson the user %s\n", user);
-
+        String userJson = gson.toJson(user);
+        System.out.printf("exportJson the user %s\n", userJson);
     }
 }
 

@@ -1,4 +1,4 @@
-package StartAtGoogle.week3.DesignPatterns;
+package StartAtGoogle.week3.DesignPatterns.Creational;
 
 public class Bus implements Vehicles {
 
