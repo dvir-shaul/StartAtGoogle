@@ -4,9 +4,12 @@ public class Passenger {
     private String name;
     private VehiclesAgency.VehicleType type;
 
-    public Passenger(String name, VehiclesAgency.VehicleType type) {
+    private Passenger(String name, VehiclesAgency.VehicleType type) {
         this.name = name;
         this.type = type;
+    }
+    public static Passenger makePassenger(String name, VehiclesAgency.VehicleType type){
+        return new Passenger(name,type);
     }
 
     public String getName() {
