@@ -39,7 +39,7 @@ public class main {
         WoodenStructureAdapter woodenHorse2 = new WoodenStructureAdapter(horse2);
         woodenHorse1.move();
         System.out.println("\nwoodenStructureAdapter - replicate:");
-        Animal a = woodenHorse2.mate(null);
+        Animal a = woodenHorse2.mate(hava.getFarmAnimaltoFarmer("Kof"));
         System.out.println(a);
 
 
