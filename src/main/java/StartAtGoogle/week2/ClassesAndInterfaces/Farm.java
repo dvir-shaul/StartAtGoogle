@@ -132,7 +132,7 @@ abstract class Animal implements AnimalIface{
  */
 class Sheep extends Animal{
     @Override
-    public Sheep mate(Animal partner) {
+    public Animal mate(Animal partner) {
         if(partner instanceof  Sheep){
             return new Sheep(Gender.FEMALE,getId(),24);
         }
@@ -146,7 +146,7 @@ class Sheep extends Animal{
         System.out.println("Sheep walk on 4");
     }
 
-    private Sheep(Gender gender, int id, double weight) {
+    Sheep(Gender gender, int id, double weight) {
         super(gender, id, weight);
     }
     public static Sheep SheepcreateNewSheep(Gender gender, int id, double weight){
@@ -175,8 +175,9 @@ class Dolphin extends Animal{
         System.out.println("Dolphin swim");
     }
     @Override
-    public Dolphin mate(Animal partner) {
+    public Animal mate(Animal partner) {
         if(partner instanceof  Dolphin){
+            System.out.println("mate from Dolphin");
             return new Dolphin(Gender.FEMALE,1,24);
         }
         return null;
@@ -192,7 +193,7 @@ class Dolphin extends Animal{
  * kof
  */
 class Kof extends Animal{
-    private Kof(Gender gender, int id, double weight) {
+    Kof(Gender gender, int id, double weight) {
         super(gender, id, weight);
     }
     public static Kof createNewkof(Gender gender, int id, double weight){
@@ -203,7 +204,7 @@ class Kof extends Animal{
         System.out.println("kof walk on 2");
     }
     @Override
-    public Kof mate(Animal partner) {
+    public Animal mate(Animal partner) {
         if(partner instanceof  Kof){
             return new Kof(Gender.FEMALE,1,24);
         }

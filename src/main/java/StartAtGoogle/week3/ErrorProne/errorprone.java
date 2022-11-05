@@ -6,8 +6,7 @@ import java.util.Arrays;
 
 public class errorprone {
 
-
-    public static boolean compare(String firstList[], String secondList[]) {
+    public static boolean compare(String[] firstList, String[] secondList) {
         return Arrays.equals(firstList, secondList);
     }
 
