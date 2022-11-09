@@ -9,6 +9,7 @@ public class main {
         System.out.println("equal 2 name with clone: "+ name.equals(name2));
 
         System.out.println("check both hashcode after clone: "+name.hashCode() + name2.hashCode());
+//        Thread.dumpStack();
 
 
         System.out.println("print name"+name);
