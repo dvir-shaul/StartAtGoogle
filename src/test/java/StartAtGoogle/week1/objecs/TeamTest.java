@@ -16,7 +16,7 @@ class TeamTest {
 
     @BeforeAll
     static void setup(){
-        HashMap<String,Integer> hmFormation = new HashMap<String,Integer>();
+        HashMap<String,Integer> hmFormation = new HashMap<>();
         // Mapping position with amount of players per position
         hmFormation.put("GK",1);
         hmFormation.put("Defense",4);
@@ -73,7 +73,7 @@ class TeamTest {
 
     @Test
     void makeTeam_tooManyPlayes_null() {
-        HashMap<String,Integer> hmFormation = new HashMap<String,Integer>();
+        HashMap<String,Integer> hmFormation = new HashMap<>();
         // Mapping position with amount of players per position
         hmFormation.put("GK",1);
         hmFormation.put("Defense",4);
@@ -86,7 +86,7 @@ class TeamTest {
     }
     @Test
     void makeTeam_noGK_null() {
-        HashMap<String,Integer> hmFormation = new HashMap<String,Integer>();
+        HashMap<String,Integer> hmFormation = new HashMap<>();
         // Mapping position with amount of players per position
         hmFormation.put("kk",1);
         hmFormation.put("Defense",4);
@@ -100,7 +100,7 @@ class TeamTest {
 
     @Test
     void makeTeam_notGoodMapTooMuch_null() {
-        HashMap<String,Integer> hmFormation = new HashMap<String,Integer>();
+        HashMap<String,Integer> hmFormation = new HashMap<>();
         // Mapping position with amount of players per position
         hmFormation.put("GK",1);
         hmFormation.put("Defense",4);
@@ -115,7 +115,7 @@ class TeamTest {
 
     @Test
     void makeTeam_onlyTowPositions_null() {
-        HashMap<String,Integer> hmFormation = new HashMap<String,Integer>();
+        HashMap<String,Integer> hmFormation = new HashMap<>();
         // Mapping position with amount of players per position
         hmFormation.put("GK",1);
         hmFormation.put("Defense",4);
