@@ -23,16 +23,17 @@ public class Team {
 
     /**
      * This method construct new Team based on the  static factory methods technique.
-     * @param map of formation to build the team
+     *
+     * @param map     of formation to build the team
      * @param strName name of the team
-     * @param name object that contains an ArrayList of names
+     * @param name    object that contains an ArrayList of names
      * @return Object of Team
      */
-    public static Team makeTeam(HashMap<String,Integer> map,String strName, Names name){
-        // First check now for wrong input so we cant create the team
+    public static Team makeTeam(HashMap<String,Integer> map, String strName, Names name){
+        // First check now for wrong input, so we cant create the team
         try{
             for (Map.Entry<String,Integer> pair : map.entrySet()) {
-                if(map.size() > 4){
+                if(map.size() != 4){ // changed
                     return null;
                 }
                 int key = pair.getValue();

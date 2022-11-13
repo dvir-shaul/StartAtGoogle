@@ -13,7 +13,7 @@ public class FootballPlayer {
         this.name = name;
         this.jersey = jersey;
         this.grade = grade;
-        this.position = position;
+        setPosition(position);
     }
 
     public String getName() {
@@ -45,7 +45,15 @@ public class FootballPlayer {
     }
 
     public void setPosition(String position) {
-        this.position = position;
+        if(position.equals("GK") ||
+                position.equals("Defense") ||
+                position.equals("Middlefiled") ||
+                position.equals("Attack") ) {
+            this.position = position;
+        }else{
+            throw new IllegalArgumentException("Wrong input, no such pos");
+        }
+
     }
 
     /**
@@ -63,10 +71,10 @@ public class FootballPlayer {
             fp = newPlayerWithDiffPos(name,jersey,grade,"GK");
         }
         else if(pos.equals("Defense")){
-            fp = newPlayerWithDiffPos(name,jersey,47,"Defense");
+            fp = newPlayerWithDiffPos(name,jersey,grade,"Defense");
         }
         else if(pos.equals("Middlefiled")){
-            fp = newPlayerWithDiffPos(name,jersey,84,"Middlefiled");
+            fp = newPlayerWithDiffPos(name,jersey,grade,"Middlefiled");
         }
         else{
             fp = newPlayerWithDiffPos("Dvir",jersey,grade,"Attack");
@@ -83,19 +91,6 @@ public class FootballPlayer {
      * @return object of kind FootballPlaye
      */
     public static FootballPlayer newPlayerWithDiffPos(String name, int jersey, int grade, String pos) {
-        FootballPlayer fp = new FootballPlayer();
-        fp.setName(name);
-        fp.setJersey(jersey);
-        fp.setGrade(grade);
-        fp.setPosition(pos);
-        return fp;
+        return new FootballPlayer(name,jersey,grade,pos);
     }
-
-
-
-
-
-
-
-
 }
